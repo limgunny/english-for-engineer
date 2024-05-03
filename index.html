@@ -14,11 +14,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 200px;
   }
 
   canvas {
     border: 1px solid white;
   }
+   button {
+    padding: 5px 10px;
+    margin: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: lightgrey;
+   }
+    /* border-radius: 10px;
+    border-width: 0px; */
+
+    .button:hover {
+  /* hover 효과 스타일 설정 */
+  background-color: #ff0000;
+  color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -318,9 +334,28 @@ document.addEventListener('keydown', function(e) {
 
 // start the game
 rAF = requestAnimationFrame(loop);
+
+
+cument.getElementById('time').innerHTML=new Date().toLocaleString()
+
+function pink(){
+    document.body.style.backgroundColor='pink'
+    document.body.style.border="1px solid black;"
+}
+function lightblue(){
+    document.body.style.backgroundColor='lightblue'
+}
+
+function reset(){
+    document.body.style.backgroundColor='black'
+}
+
 </script>
-<img style="margin-top: -500px; margin-left: ;" src="logo.png" alt="jbu">
+<img style="margin-top: -500px; margin-left: 00px;" src="logo.png" alt="jbu">
 <h1 style="color: aliceblue; margin-left: -160px; margin-top: -300px;"><br><br>We can make any program<br> In less than a minute<br>By using AI prompt</h1>
-  <div></div>
+
+<button style="margin-top: 0px; margin-left: -400px;" onclick="pink()">Pink</button>
+<button style="margin-top: 00px; margin-left: 0px;" onclick="lightblue()">Blue</button>
+<button style="margin-top: 00px; margin-left: 0px;" onclick="reset()">Reset</button>
 </body>
 </html>
