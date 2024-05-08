@@ -34,8 +34,12 @@ let usernumber = prompt('Enter your student number')
 if(usernumber>90000000){
 if(usernumber <100000000){ (alert('Verification completed'))
 
-}
 
+}
+else{
+  alert('Permission denied : Check your number again')
+  location.href="https://www.joongbu.ac.kr/";
+}
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -299,11 +303,11 @@ rAF = requestAnimationFrame(loop);
 }
 else{
     alert('Permission denied : Check your number again')
-setTimeout(function(){
+
 
         location.href="https://www.joongbu.ac.kr/";
 
-},2700)
+
 }
 
 </script>
